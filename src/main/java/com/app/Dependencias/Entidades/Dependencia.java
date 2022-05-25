@@ -40,6 +40,9 @@ public class Dependencia {
 	@OneToMany(mappedBy="dependencia", cascade = CascadeType.ALL)
 	private Set<Foto> fotos;
 
+	@OneToMany(mappedBy = "dependencias", cascade = CascadeType.ALL)
+	private Set<Busca> buscas;
+
 	public Dependencia() {
 		super();
 	}

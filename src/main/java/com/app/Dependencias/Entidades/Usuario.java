@@ -52,8 +52,6 @@ public class Usuario {
 		this.correo = correo;
 	}
 
-
-
 	public Long getIdUsuario() {
 		return idUsuario;
 	}
