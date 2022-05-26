@@ -13,6 +13,6 @@ public class MvcConfig implements WebMvcConfigurer {
 		// TODO Auto-generated method stub
 		WebMvcConfigurer.super.addResourceHandlers(registry);
 
-		registry.addResourceHandler("/imagenes/**").addResourceLocations("https://pruebadeblob1.file.core.windows.net/");
+		registry.addResourceHandler("/imagenes/**").addResourceLocations("https://pruebadeblob1.file.core.windows.net/pruebadep/");
 	}
 }
