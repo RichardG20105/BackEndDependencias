@@ -87,6 +87,7 @@ public class ControladorUsuario {
 		usuarioAct.setApellidos(usuario.getApellidos());
 		usuarioAct.setUsuario(usuario.getUsuario());
 		usuarioAct.setContrasena(usuario.getContrasena());
+		usuarioAct.setSexo(usuario.getSexo());
 		usuarioAct.setCiudad(usuario.getCiudad());
 		usuarioAct.setTelefono(usuario.getTelefono());
 		usuarioAct.setCorreo(usuario.getCorreo());
