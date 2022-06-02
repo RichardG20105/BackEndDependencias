@@ -27,8 +27,8 @@ public class Usuario {
 	@Column(name = "contrasena")
 	private String contrasena;
 	
-	@Column(name = "sexo")
-	private String sexo;
+	@Column(name = "genero")
+	private String genero;
 
 	@Column(name = "ciudad")
 	private String ciudad;
@@ -43,14 +43,14 @@ public class Usuario {
 		super();
 	}
 
-	public Usuario(String nombres, String apellidos, String usuario, String contrasena, String sexo, String ciudad, String telefono,
+	public Usuario(String nombres, String apellidos, String usuario, String contrasena, String genero, String ciudad, String telefono,
 			String correo) {
 		super();
 		this.nombres = nombres;
 		this.apellidos = apellidos;
 		this.usuario = usuario;
 		this.contrasena = contrasena;
-		this.sexo = sexo;
+		this.genero = genero;
 		this.ciudad = ciudad;
 		this.telefono = telefono;
 		this.correo = correo;
@@ -88,12 +88,12 @@ public class Usuario {
 		this.usuario = usuario;
 	}
 
-	public String getSexo() {
-		return sexo;
+	public String getGenero() {
+		return genero;
 	}
 
-	public void setSexo(String sexo) {
-		this.sexo = sexo;
+	public void setGenero(String genero) {
+		this.genero = genero;
 	}
 
 	public String getContrasena() {
