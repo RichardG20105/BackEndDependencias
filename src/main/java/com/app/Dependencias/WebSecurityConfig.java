@@ -47,7 +47,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 			.authorizeHttpRequests().antMatchers(HttpMethod.GET,"/Dependencia/**").permitAll().and()
 			.authorizeHttpRequests().antMatchers(HttpMethod.GET,"/TipoDependencia/**").permitAll().and()
 			.authorizeHttpRequests().antMatchers("/imagenes/**").permitAll().and()
-			.authorizeHttpRequests().antMatchers(HttpMethod.POST, "/Usuario/Sesion").permitAll()
+			.authorizeHttpRequests().antMatchers(HttpMethod.POST, "/Usuario/Sesion").permitAll().and()
 			.authorizeHttpRequests().antMatchers(HttpMethod.POST, "/Usuario/Registro").permitAll()
 			.anyRequest().authenticated().and()
 			.exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and()
